@@ -22,8 +22,11 @@
 
 | Number | Deliverable | Link | Notes |
 | ------------- | ------------- | ------------- |------------- |
-| 1. | ... |...| ...| 
-| 2.  | ... |...| ...| 
+| 0a. | ... |...| ...| 
+| 0b.  | ... |...| ...| 
+| 0c.  | ... |...| ...| 
+| 0d.  | ... |...| ...| 
+| 1.  | ... |...| ...| 
 
 **Additional Information**
 > Any further comments on the milestone that you would like to share with us.
