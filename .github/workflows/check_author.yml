@@ -46,8 +46,8 @@ jobs:
         with: 
           script: |
               const app_commits = await github.rest.repos.listCommits({
-                owner: 'w3f',
-                repo: 'Grants-Program',
+                owner: 'Polkadot-Fast-Grants',
+                repo: 'apply',
                 path: 'applications/${{ steps.parse-delivery.outputs.application_document }}'
               });
               
