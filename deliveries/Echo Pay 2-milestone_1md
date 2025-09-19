@@ -14,15 +14,15 @@
   [EchoPay-2.md (applications directory)](https://github.com/MythicMindLabs/apply/blob/master/applications/EchoPay-2.md)
 - **Milestone Number:**  
   1
-- **DOT Payment Address:**  
-  [Insert your Polkadot beneficiary address]
+- **DOT Payment Address:**   
+  [16URGsLexRKLHaSwRcGeAYkHMCgu1cEc8YHXRbxxjWqPdA94]
 
 ---
 
 ## Context
 
 This delivery completes the milestone for *EchoPay-2: Voice-Activated Payments for Polkadot*.  
-**Note:** The milestone folder is currently named "`Phrase 2.5`", but if this is a typographical error for "`Phase 2.5`", please clarify for documentation and audit consistency.
+**Note:** The milestone folder is currently named "`Phrase 2.5`"
 
 The submission includes full documentation, code, tests, and deployment assets for the project. Diagrams, screenshots, and visual workflow aids are provided in the `docs/` folder and `Readme.md` for reviewer context.
 
@@ -75,7 +75,7 @@ The submission includes full documentation, code, tests, and deployment assets f
 ---
 
 **Spelling Note:**  
-All project materials currently use "Phrase 2.5." If this is an error, please advise so that it can be corrected across documentation, references, and delivery artifacts.
+All project materials currently use "Phrase 2.5."
 
 ---
 
