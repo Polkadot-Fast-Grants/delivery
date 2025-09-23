@@ -11,7 +11,7 @@
 ---
 
 - **Application Document:**  
-  [EchoPay-2.md (applications directory)](https://github.com/MythicMindLabs/apply/blob/master/applications/EchoPay-2.md)
+  [EchoPay-2 Application](https://github.com/Polkadot-Fast-Grants/apply/pull/74)
 - **Milestone Number:**  
   1
 - **DOT Payment Address:**   
@@ -76,6 +76,10 @@ The submission includes full documentation, code, tests, and deployment assets f
 
 **Spelling Note:**  
 All project materials currently use "Phrase 2.5."
+
+---
+
+Link to the application pull request: https://github.com/Polkadot-Fast-Grants/apply/pull/74
 
 ---
 
