@@ -43,7 +43,7 @@ Instead, we focused on strengthening **1b** and **1c** to provide a working foun
 | ------ | ----------- | ---- | ----- |
 | 1.a | Intent Pallet | ❌ Not delivered | Re-scoped (see context note above) |
 | 1.b | Query On-chain Statistics | [Query Module](https://github.com/dbooklabs/polkadot_mcp/tree/main/src/tools/services) | Supports portfolio balance queries & chain-level analytics (e.g. DOT balance). Demonstrated via chat interface. |
-| 1.c | Native Asset Transfer | [Transfer Module](https://github.com/dbooklabs/polkadot_mcp/tree/main/src/tools/transfers) | Supports native transfers across AssetHub, Acala, and Astar. Example: `Send 10 ASTAR to 16B...` → intent parsed → signed via wallet → executed. [Video Demo](https://docsend.com/v/jrb5g/polkadotm1). |
+| 1.c | Native Asset Transfer | [Transfer Module](https://github.com/dbooklabs/polkadot_mcp/tree/main/src/tools/transfers) | Supports native transfers across AssetHub, Acala, and Astar. Example: `Send 10 ASTAR to 16B...` → intent parsed → signed via wallet → executed. [Video Demo](https://drive.google.com/file/d/1JsXowP3nupkAWjQzQvWXEeX88nqzWA1j/view). |
 
 ---
 
