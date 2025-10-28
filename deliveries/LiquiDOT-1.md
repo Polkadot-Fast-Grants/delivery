@@ -1,8 +1,5 @@
 # Milestone Delivery 📬
 
-> ⚡ Only the GitHub account that submitted the application is allowed to submit milestones. 
-> 
-> Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with `>`, such as this one, can be removed.
 
 **The delivery is according to the official [milestone delivery guidelines](https://github.com/Polkadot-Fast-Grants/delivery/blob/master/delivery-guidelines.md).**  
 
@@ -18,19 +15,18 @@ This milestone focuses on delivering and proving the core smart-contract layer t
 
 | Number | Deliverable | Link | Notes |
 | ------------- | ------------- | ------------- |------------- |
-| 0a. | License (Apache-2.0) | https://github.com/gabikreal1/LiquiDOT/blob/101b662/LICENSE | SPDX: Apache-2.0 as specified in the application. |
-| 0b. | Documentation | https://liquidot.gitbook.io/liquidot-docs | All of the necessary docs are in GitBook. Smart Contracts README: https://github.com/gabikreal1/LiquiDOT/blob/101b662/SmartContracts/README.md |
-| 0c. | Testing and Testing Guide | https://github.com/gabikreal1/LiquiDOT/blob/101b662/SmartContracts/test/README.md | Testnet-first suites for AssetHubVault, XCMProxy, and Integration. Quick commands: https://github.com/gabikreal1/LiquiDOT/blob/101b662/SmartContracts/test/.test-commands.md · Helpers (wiring/diagnostics): https://github.com/gabikreal1/LiquiDOT/tree/101b662/SmartContracts/test/helpers |
+| 0a. | License (Apache-2.0) | https://github.com/gabikreal1/LiquiDOT/blob/main/LICENSE | SPDX: Apache-2.0 as specified in the application. |
+| 0b. | Documentation | https://liquidot.gitbook.io/liquidot-docs | All of the necessary docs are in GitBook. Smart Contracts README: https://github.com/gabikreal1/LiquiDOT/blob/main/SmartContracts/README.md |
+| 0c. | Testing and Testing Guide | https://github.com/gabikreal1/LiquiDOT/blob/main/SmartContracts/test/README.md | Testnet-first suites for AssetHubVault, XCMProxy, and Integration. Quick commands: https://github.com/gabikreal1/LiquiDOT/blob/main/SmartContracts/test/.test-commands.md · Helpers (wiring/diagnostics): https://github.com/gabikreal1/LiquiDOT/tree/main/SmartContracts/test/helpers |
 | 0d. | Article / Build-in-public | Thread on X: https://x.com/LiquiDOT_LDN/status/1982151106797957511 | Ongoing article thread on X (will continue as a series). We’ll mirror a recap on GitBook; public build updates continue on X. |
-| 1. | Core Contracts (Asset Hub Vault + XCM Proxy) | Contracts: AssetHubVault.sol https://github.com/gabikreal1/LiquiDOT/blob/101b662/SmartContracts/contracts/V1%28Current%29/AssetHubVault.sol · XCMProxy.sol https://github.com/gabikreal1/LiquiDOT/blob/101b662/SmartContracts/contracts/V1%28Current%29/XCMProxy.sol | Deployments (testnet) AssetHubVault (Paseo Asset Hub) 0x67E5293e374219C515bD9838B23C792C555e51D4 · XCMProxy (Moonbase Alpha) 0xf935e063b2108cc064bB356107ac01Dc90f96652. Tests: AssetHubVault https://github.com/gabikreal1/LiquiDOT/tree/101b662/SmartContracts/test/AssetHubVault/testnet · XCMProxy https://github.com/gabikreal1/LiquiDOT/tree/101b662/SmartContracts/test/XCMProxy/testnet  |
+| 1. | Core Contracts (Asset Hub Vault + XCM Proxy) | Contracts: AssetHubVault.sol https://github.com/gabikreal1/LiquiDOT/blob/main/SmartContracts/contracts/V1%28Current%29/AssetHubVault.sol · XCMProxy.sol https://github.com/gabikreal1/LiquiDOT/blob/main/SmartContracts/contracts/V1%28Current%29/XCMProxy.sol | Deployments (testnet) AssetHubVault (Paseo Asset Hub) 0x67E5293e374219C515bD9838B23C792C555e51D4 · XCMProxy (Moonbase Alpha) 0xf935e063b2108cc064bB356107ac01Dc90f96652. Explorers: Moonbase Moonscan https://moonbase.moonscan.io/address/0xf935e063b2108cc064bB356107ac01Dc90f96652 · Paseo Asset Hub Blockscout https://blockscout-passet-hub.parity-testnet.parity.io/address/0x67E5293e374219C515bD9838B23C792C555e51D4?tab=index. Tests: AssetHubVault https://github.com/gabikreal1/LiquiDOT/tree/main/SmartContracts/test/AssetHubVault/testnet · XCMProxy https://github.com/gabikreal1/LiquiDOT/tree/main/SmartContracts/test/XCMProxy/testnet |
 
 **Additional Information**
 • Primary documentation lives in GitBook (as requested): https://liquidot.gitbook.io/liquidot-docs
 
-• Commit used for permalinks in this delivery: 101b662 (repository root). If you prefer a tag for review, we can cut `m1-delivery-101b662` upon request and update links accordingly.
+• Links reference the latest code on the `main` branch. If you prefer a frozen snapshot for review, we can cut a tag (e.g., `m1-delivery`) and update links accordingly.
 
 • Networks used for testing: Moonbase Alpha (ChainId 1287) and Paseo Asset Hub (ParaId 1000). Deployment artifacts under `SmartContracts/deployments/` include addresses and configuration used by the tests.
 
-• Repro quickstart: follow SmartContracts Testing Guide (link above). Suites are idempotent and include helpers to wire contracts across chains, seed liquidity, and verify configuration.
+• Testnet infrastructure note: At delivery time, full end-to-end EVM↔EVM XCM on Paseo was constrained. While Paseo Asset Hub EVM exposes the required XCM precompiles, there wasn’t a second Paseo EVM chain with XCM precompiles to receive/execute the other side. Accordingly, we validated contract logic and cross-contract flows on Moonbase and used safe test‑mode paths on Asset Hub where direct XCM could not be exercised. Once a second EVM chain with XCM precompiles is available on Paseo (or Kusama Asset Hub precompiles land), we will re‑run and publish complete E2E XCM runs and update the docs.
 
-• Article status (0d): The Milestone 1 recap article is being finalized in GitBook; we will add the exact link to this file and to the PR thread once published (within the program’s allowed fix window). For now, see the demo video and build-in-public thread linked above.
