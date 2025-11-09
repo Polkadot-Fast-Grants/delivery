@@ -17,6 +17,7 @@ The deliverables of this milestone allows the users of AgentDOT to translate pro
   * transfer assets like USDT and USDC from Polkadot Assethub to Moonbeam and Hydration.
  4. Staking(**Natural Language to Staking Parser**)
   * bond tokens
+  * bond extra tokens
   * Fetch the list of nominators to validate and the nominate them.
   * unbond tokens
  5. Nominations Pools
@@ -30,10 +31,10 @@ The deliverables of this milestone allows the users of AgentDOT to translate pro
 
 | Number | Deliverable | Link | Notes |
 | ------------- | ------------- | ------------- |------------- |
-| 1a. | Natural Language to Transfer Parser |feature/polkadot-ai-agent|Kindly test on the feature/polkadot-ai-agent branch|
-| 1b.  | Natural Language to Staking Parser |feature/polkadot-ai-agent|Kindly test on the feature/polkadot-ai-agent branch|
-| 1c.  | Natural Language to XCM Parser |feature/polkadot-ai-agent|Kindly test on the feature/polkadot-ai-agent branch|
-| 1d.  | Wallet connector and extrinsic broadcaster |feature/polkadot-ai-agent|Kindly test on the feature/polkadot-ai-agent branch |
+| 1a. | Natural Language to Transfer Parser |dev|Kindly test on the dev branch|
+| 1b.  | Natural Language to Staking Parser |dev|Kindly test on the dev branch|
+| 1c.  | Natural Language to XCM Parser |dev|Kindly test on the dev branch|
+| 1d.  | Wallet connector and extrinsic broadcaster |dev|Kindly test on the dev branch |
 
 **Additional Information**
 
