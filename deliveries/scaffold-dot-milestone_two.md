@@ -27,3 +27,6 @@ The second milestone is a UI/UX scope of work. Includes 4 wallet providers with 
 | 1.  | MVP | Forked the scaffold-eth 2 repository and configured hardhat with hardhat-polkadot, hardhat-polkadot-node and resolc. Added post install script to download latest node and eth-rpc binaries. [Open source repo](https://github.com/scaffold-dot/scaffold-dot)is available now under the scaffold-dot organization. run and deploy to local chain, deploy to Paseo Passet Hub with zero configuration, and test the dapp with the frontend that is generated from the contract ABI. Toolkit is capable of deploying to Polkadot and Kusama Hub when they're publicly available. There are many hooks and components that are also provided for frontend development. 
 | 2.  | UI/UX |  Included 4 wallet providers with web2/social login AND browser extension wallets. Easy to configure out of the box. Integrated quick access to PassetHub faucet. UI updated to feel Polkadot native.
 
+### ℹ️ Additional Information
+
+git checkout wallet-providers branch for review - will merge upon milestone completion.
